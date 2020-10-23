@@ -18,7 +18,7 @@ def xml_to_csv(path):
 
                      )
             xml_list.append(value)
-    column_name = ['filename','startX','startY','endX','endY']
+    column_name = ['filename','startX','startY','endX','endY','label']
     xml_df = pd.DataFrame(xml_list, columns=column_name)
     return xml_df
 
